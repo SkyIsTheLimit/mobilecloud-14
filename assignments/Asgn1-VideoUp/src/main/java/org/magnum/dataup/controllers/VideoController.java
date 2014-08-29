@@ -44,13 +44,6 @@ public class VideoController {
 		this.atomic = new AtomicLong(0L);
 	}
 
-	// @RequestMapping(value = VideoSvcApi.VIDEO_SVC_PATH, method =
-	// RequestMethod.GET)
-	// public @ResponseBody
-	// List<Video> getVideoList() {
-	// return this.videos;
-	// }
-
 	@RequestMapping(value = VideoSvcApi.VIDEO_SVC_PATH, method = RequestMethod.GET)
 	public @ResponseBody
 	Collection<Video> getVideoList() {
